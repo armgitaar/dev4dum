@@ -1,6 +1,6 @@
-package __PACKAGE__
+package com.dev4dum.site
 
-import __PACKAGE__.controllers.WelcomeController
+import com.dev4dum.site.controllers.WelcomeController
 import dev.alpas.routing.RouteGroup
 import dev.alpas.routing.Router
 

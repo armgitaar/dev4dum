@@ -1,6 +1,6 @@
-package __PACKAGE__.database.seeds
+package com.dev4dum.site.database.seeds
 
-import __PACKAGE__.database.factories.UserFactory
+import com.dev4dum.site.database.factories.UserFactory
 import dev.alpas.Application
 import dev.alpas.make
 import dev.alpas.ozone.Seeder

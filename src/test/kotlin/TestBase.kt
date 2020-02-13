@@ -1,6 +1,6 @@
-import __PACKAGE__.ConsoleKernel
-import __PACKAGE__.addRoutes
-import __PACKAGE__.database.factories.UserFactory
+import com.dev4dum.site.ConsoleKernel
+import com.dev4dum.site.addRoutes
+import com.dev4dum.site.database.factories.UserFactory
 import dev.alpas.auth.Authenticatable
 import dev.alpas.make
 import dev.alpas.ozone.from

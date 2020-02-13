@@ -1,6 +1,6 @@
-package __PACKAGE__.database.migrations
+package com.dev4dum.site.database.migrations
 
-import __PACKAGE__.entities.Users
+import com.dev4dum.site.entities.Users
 import dev.alpas.auth.PasswordResetTokens
 import dev.alpas.ozone.migration.Migration
 

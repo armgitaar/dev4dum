@@ -1,4 +1,4 @@
-package __PACKAGE__
+package com.dev4dum.site
 
 import dev.alpas.Application
 import dev.alpas.ServiceProvider

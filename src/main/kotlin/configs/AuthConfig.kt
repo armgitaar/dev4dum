@@ -1,6 +1,6 @@
-package __PACKAGE__.configs
+package com.dev4dum.site.configs
 
-import __PACKAGE__.entities.Users
+import com.dev4dum.site.entities.Users
 import dev.alpas.Environment
 import dev.alpas.auth.SessionAuthChannel
 import dev.alpas.auth.AuthConfig as BaseConfig

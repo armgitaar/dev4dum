@@ -1,4 +1,4 @@
-package __PACKAGE__.entities
+package com.dev4dum.site.entities
 
 import dev.alpas.auth.Authenticatable
 import dev.alpas.auth.UserProvider

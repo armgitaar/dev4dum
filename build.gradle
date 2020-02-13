@@ -10,12 +10,12 @@ plugins {
 }
 
 startScripts {
-    applicationName = '__APP_NAME__'
+    applicationName = 'site'
 }
 
-mainClassName = '__PACKAGE__.StartKt'
+mainClassName = 'com.dev4dum.site.StartKt'
 
-group '__PACKAGE__'
+group 'com.dev4dum.site'
 version '1.0.0'
 
 repositories {
@@ -48,7 +48,7 @@ compileTestKotlin {
 
 jar {
     manifest {
-        attributes 'Main-Class': '__PACKAGE__.StartKt'
+        attributes 'Main-Class': 'com.dev4dum.site.StartKt'
     }
 }
 
@@ -60,7 +60,7 @@ task enforceVersion() {
 
 shadowJar {
     destinationDirectory = file("./")
-    archiveBaseName.set('__APP_NAME__')
+    archiveBaseName.set('site')
     archiveClassifier.set(null)
     version = null
 }
@@ -72,5 +72,5 @@ test {
 }
 
 installDist {
-    destinationDir = file("./build/install/__APP_NAME__")
+    destinationDir = file("./build/install/site")
 }
