@@ -14,7 +14,6 @@ interface Video : Entity<Video> {
 
     val id: Long
     var cat_id: Int
-    var category: String
     var title: String
     var description: String
     var video_key: String
@@ -24,31 +23,29 @@ interface Video : Entity<Video> {
 object Videos : MigratingTable<Video>("videos") {
     val id by bigIncrements("id").bindTo { it.id }
     val cat_id by int("cat_id").bindTo { it.cat_id }
-    val category by varchar("category").bindTo { it.category }
     val title by varchar("title").bindTo { it.title }
     val description by varchar("description").bindTo { it.description }
     val video_key by varchar("video_key").bindTo { it.video_key }
     val created_at by timestamp("created_at").bindTo { it.created_at }
 
-    fun getVideos(catId: Int): Any? {
-        val videos = Videos
-            .asSequence()
-            .filter { it.cat_id eq catId }
-            .sortedByDescending { it.created_at }
-            .take(4)
-            .mapColumns3 { Tuple3(it.title, it.description, it.video_key) }
-            .toList()
-
-        return videos
-    }
-
-    fun latestVideos(): List<Video> {
+    fun getVideos(catId: Int): List<Video> {
         return select()
-            //.where { it.cat_id eq catId }
+            .where { cat_id eq catId }
             .orderBy(created_at.desc())
-            // .limit(0,4)
-            .map { row -> createEntity((row)) }
+            .limit(0,4)
+            .map { row -> createEntity(row) }
     }
+
+
+    val catIds = Videos
+        .asSequence()
+        .filter { it.cat_id.isNotNull() }
+        .map { it.cat_id }
+        .toList()
+
+    val maxCatId = Videos
+        .asSequence()
+        .aggregateColumns { max(it.cat_id) }
 }
 
 
