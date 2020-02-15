@@ -12,13 +12,9 @@ class WelcomeController : Controller() {
 
 
         // get max category value, start at 1 - pull latest 4 videos, add to master list. If category not present, then ignore, and continue
-        //itemsList.toMutableList().add(item)
-
         val videosList: MutableList<Video> = mutableListOf()
 
         var vidProgression = 1
-
-        print("hi ${Videos.catIds}")
 
         while (Videos.maxCatId!! + 1 > vidProgression) {
             if (vidProgression in Videos.catIds) {
@@ -30,17 +26,10 @@ class WelcomeController : Controller() {
 
             } else {
                 vidProgression += 1
-                println("hey there")
                 continue
             }
 
         }
-
-        println(videosList)
-
-
-        //videosList.toMutableList().add(ytVideos)
-
 
         call.render("welcome", "videosList" to videosList)
 
