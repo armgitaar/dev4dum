@@ -1,0 +1,46 @@
+<!--Nav-->
+<nav id="header" class="w-full fixed nav top-0 py-1 bg-white border-b-2" style="z-index:100">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3">
+
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+            <svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    <li>
+                        <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="/resources">
+                            Resources
+                        </a>
+                    </li>
+                    <li>
+                        <a class="inline-block no-underline hover:text-black hover:underline py-2 px-4" href="#about">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="order-1 md:order-2 justify-center md:mr-40 lg:mr-40">
+            <a class="flex items-center tracking-wide no-underline hover:no-underline font-bold text-blue-800 text-xl font-sarif" href="/">
+                Dev<span style="color:#ED1716">4</span>Dum
+            </a>
+        </div>
+
+        <div class="order-2 md:order-3 flex items-center" id="nav-content">
+
+            <a class="pl-3 inline-block no-underline hover:text-black" href="https://www.youtube.com/channel/UCXN7gGNySwlIw-lDPF-3ZJg" target="_blank">
+                <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M16 8.38l4.55-2.27A1 1 0 0 1 22 7v10a1 1 0 0 1-1.45.9L16 15.61V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v1.38zm0 2.24v2.76l4 2V8.62l-4 2zM14 17V7H4v10h10z"/>
+                </svg>
+            </a>
+
+        </div>
+    </div>
+</nav>

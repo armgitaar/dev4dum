@@ -1,0 +1,28 @@
+{% extends 'layout/app.peb' %}
+
+{% block title %} Hilarious Dad Jokes {% endblock %}
+
+{% block content %}
+
+{% include '_nav.peb' %}
+
+<section class="bg-white py-8">
+
+    <!-- beginning row  -->
+    <div class="container mx-auto flex items-top flex-wrap py-8">
+
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6803508267139042566" data-video-id="6803508267139042566" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p><a title="dadjokes" target="_blank" href="https://www.tiktok.com/tag/dadjokes">##dadjokes</a></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6803489853938862853">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6803508948239469829" data-video-id="6803508948239469829" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p><a title="dadjokes" target="_blank" href="https://www.tiktok.com/tag/dadjokes">##dadjokes</a></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6803500174699285253">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6802730292936264966" data-video-id="6802730292936264966" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p><a title="dadjokes" target="_blank" href="https://www.tiktok.com/tag/dadjokes">##dadjokes</a> <a title="knockknock" target="_blank" href="https://www.tiktok.com/tag/knockknock">##knockknock</a></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6802720604458994438">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6801967483730398470" data-video-id="6801967483730398470" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p><a title="dadjokes" target="_blank" href="https://www.tiktok.com/tag/dadjokes">##dadjokes</a></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6801955562738223878">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6801639906629160197" data-video-id="6801639906629160197" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p><a title="dadjokes" target="_blank" href="https://www.tiktok.com/tag/dadjokes">##dadjokes</a> <a title="godsavethequeen" target="_blank" href="https://www.tiktok.com/tag/godsavethequeen">##godsavethequeen</a></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6801526482725374725">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6801634902417706246" data-video-id="6801634902417706246" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6801624527345289989">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@adammiedema/video/6801633853141290245" data-video-id="6801633853141290245" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@adammiedema" href="https://www.tiktok.com/@adammiedema">@adammiedema</a> <p><a title="dadjokes" target="_blank" href="https://www.tiktok.com/tag/dadjokes">##dadjokes</a></p> <a target="_blank" title="♬ original sound - adammiedema" href="https://www.tiktok.com/music/original-sound-6801214403623586565">♬ original sound - adammiedema</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
+    </div>
+
+</section>
+
+{% include '_footer.peb' %}
+
+{% endblock %}

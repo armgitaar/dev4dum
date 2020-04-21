@@ -1,0 +1,328 @@
+{% extends 'layout/app.peb' %}
+
+{% block title %} Most Awesome List Of Resources {% endblock %}
+
+
+{% block content %}
+
+{% include '_nav.peb' %}
+
+<!--Container-->
+<div class="container w-full flex flex-wrap mx-auto px-2 pb-8 pt-24">
+    <div class="w-full lg:w-1/5 lg:px-6 text-xl text-grey-darkest leading-normal">
+        <!--
+        <p class="text-base font-bold py-2 lg:pb-6 text-grey-darker">Contents</p>
+        -->
+        <div class="block lg:hidden sticky pin">
+            <button id="submenu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-grey-dark hover:border-purple appearance-none focus:outline-none">
+                <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="w-full sticky pin hidden h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;" id="submenu-content">
+            <ul class="list-reset list-outside">
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#development" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:border-purple lg:hover:border-purple">
+                        <span class="pb-1 md:pb-0 text-sm">Development</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#design" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Design</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#frameworks" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Frameworks</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#databases" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Databases</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#analytics" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Analytics</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#projectmanagement" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Project Management</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#startuplife" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Startup Life</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#random" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Random</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-black leading-normal bg-white border border-grey-light border-rounded">
+        <!--Title-->
+        <div class="font-sans">
+            <!--
+            <span class="text-base text-purple font-bold">&laquo;</span> <a href="#" class="text-base md:text-sm text-purple font-bold no-underline hover:underline">Back Link</a>
+            -->
+            <h1 class="font-sans break-normal text-black pt-6 pb-2 text-3xl font-semibold">The Ultimate List Of Helpful Resources</h1>
+            <hr class="border-b border-grey-light">
+        </div>
+        <!--Post Content-->
+        <!--Lead Para-->
+        <p class="py-4">
+            Howdy! 👋
+        </p>
+        <p class="py-4">
+            I've been running across a bunch of very helpful resources in my learning journey and I want to share them with you! Well... It's also somewhat self-serving since I want to keep them all organized for my own greedy purposes too. 😼
+        </p>
+
+        <a name="development" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Development</h2>
+
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Integrated Development Environments (IDEs)</h3>
+        <p class="py-4">
+            <a href="https://www.jetbrains.com/" class="text-blue-600 hover:text-blue-700" target="_blank">JetBrains</a> suite of IDEs are awesome. I currently use <a href="https://www.jetbrains.com/idea/" class="text-blue-600 hover:text-blue-700" target="_blank">IntelliJ IDEA</a> for web development; the community version is free! In the past, I've used <a href="https://www.jetbrains.com/pycharm/" class="text-blue-600 hover:text-blue-700" target="_blank">PyCharm</a> for Python coding and it was super helpful.
+        </p>
+        <p class="py-4">
+            <a href="https://www.sublimetext.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Sublime Text</a> is a great, lightweight multi-purpose editor. I typically use this second to IntelliJ.
+        </p>
+        <p class="py-4">
+            <a href="http://brackets.io/" class="text-blue-600 hover:text-blue-700" target="_blank">Brackets</a> is another great open source text editor for web design; it's a good alternative to Sublime Text.
+        </p>
+
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Command Line / Terminal</h3>
+        <p class="py-4">
+            <a href="https://snipline.io/" class="text-blue-600 hover:text-blue-700" target="_blank">Snipline</a> makes using terminal a lot less painful. I put all of my common commands in here so I can a) keep them handy and b) get past terminal as quickly as I can!
+        </p>
+        <p class="py-4">
+            If you have a Mac, <a href="https://brew.sh/" class="text-blue-600 hover:text-blue-700" target="_blank">install Homebrew</a>. There is a lot of helpful packages you will install at some point, and brew makes that process all the easier 90% of the time - every time 😎.
+        </p>
+        <p class="py-4">
+            <a href="https://www.vim.org/" class="text-blue-600 hover:text-blue-700" target="_blank">Vim</a> will save your life if you need to edit files via command line. Now that you have Homebrew via the previous tool, you can easily
+            install Vim using the <code class="bg-gray-300">brew vim install</code> command! Vim's website sure does look like it is straight out of the 90's, huh? <a href="https://www.keycdn.com/blog/vim-commands" class="text-blue-600 hover:text-blue-700" target="_blank">Check out this resource</a>
+            for instructions on how to use Vim to its fullest and common commands to use.
+        </p>
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Code and Repository Management</h3>
+        <p class="py-4">
+            <a href="https://github.com/" class="text-blue-600 hover:text-blue-700" target="_blank">GitHub</a> is a great code repository. If you need to go private with team management, then <a href="https://gitlab.com/" class="text-blue-600 hover:text-blue-700" target="_blank">GitLab</a> may be a little better.
+        </p>
+        <p class="py-4">
+            <a href="https://www.sourcetreeapp.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Sourcetree</a> by Atlassian puts a nice GUI on top of Git management. Are you surprised I am avoiding using command line for Git management? I'm not! But, if I need to, then
+            I refer to <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" class="text-blue-600 hover:text-blue-700" target="_blank">Atlassian's Git Commands</a>.
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Resources</h3>
+        <p class="py-4">
+            For <strong>Javascript</strong>, <a href="https://www.w3schools.com/js/" class="text-blue-600 hover:text-blue-700" target="_blank">W3 Schools</a> will get you educated and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" class="text-blue-600 hover:text-blue-700" target="_blank">Mozilla's JavaScript Guide</a> will tell you everything you
+            don't even want to know. Seriously though, its exhaustive and if you can't find it there, then it don't exist.
+        </p>
+        <p class="py-4">
+            For <strong>Structured Query Language (SQL)</strong>, <a href="https://www.w3schools.com/sql/" class="text-blue-600 hover:text-blue-700" target="_blank">W3 Schools</a> also can't be beat. If you are looking to work with data, learn SQL. Great for the resume for almost any job title!
+        </p>
+        <p class="py-4">
+            For <strong>Cascading Style Sheets (CSS)</strong>, guess what? <a href="https://www.w3schools.com/css/" class="text-blue-600 hover:text-blue-700" target="_blank">W3 Schools</a>. 😉
+        </p>
+        <p class="py-4">
+            <a href="https://tailwindcss.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Tailwind CSS</a>. So hot right now. 🔥 Forget bootstraps, that's yesterday's news.
+        </p>
+
+        <a name="design" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Design</h2>
+
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Inspiration</h3>
+        <p class="py-4">
+            <a href="https://hyperpixel.io/" class="text-blue-600 hover:text-blue-700" target="_blank">Hyperpixel's</a> collection of beautiful landing pages and pricing pages will surely provide you with many inspirations.
+        </p>
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Tools</h3>
+        <p class="py-4">
+            <a href="https://balsamiq.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Balsamiq</a> is for rough wireframes and it couldn't be more perfect.
+        </p>
+        <p class="py-4">
+            <a href="https://www.figma.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Figma</a> is basically for everything else. You can make low to high fidelity designs, easily collaborate/share with others,
+            and even create click-through prototypes.
+        </p>
+        <p class="py-4">
+            <a href="https://tinypng.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Tiny PNG</a> reduces your image file size while maintaining quality. Trust me, the images you upload to your site
+            are probably way bigger than they should be. Reducing file size saves on storage and makes your images load quicker.
+        </p>
+        <h3 class="font-sans break-normal text-gray-700 pt-6 pb-2 text-lg font-semibold">Resources</h3>
+        <p class="py-4">
+            <a href="https://unsplash.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Unsplash</a> is everywhere right now. Hard not to be since they provide a large variety of high quality pictures for free. But, please be nice,
+            give the artist credit whenever and wherever you can. 🌇
+        </p>
+        <p class="py-4">
+            <a href="https://heroicons.dev/" class="text-blue-600 hover:text-blue-700" target="_blank">Heroicons</a> is a large list of free vector icons. Find, copy, and paste into your website!
+        </p>
+        <p class="py-4">
+            <a href="https://material.io/" class="text-blue-600 hover:text-blue-700" target="_blank">Material Design</a> is a huge part of the Google / Android design world. If you like simple design, this design system is a
+            great guide to be acquainted with to get ideas and how reduction equals delight.
+        </p>
+
+        <a name="frameworks" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Frameworks</h2>
+        <p class="py-4">
+            <a href="https://alpas.dev" class="text-blue-600 hover:text-blue-700" target="_blank">Alpas framework</a> is my jam right now. Full disclosure, I am a co-founder, but I'm definately not the technical co-founder
+            (not a big surprise if you've seen my videos 😉). Alpas is quick to get started with, comes with a lot of valuable features out-of-the-box, and was used to make this site. 😎
+        </p>
+        <p class="py-4">
+            For <strong>Python</strong>, <a href="https://flask.palletsprojects.com/en/1.1.x/" class="text-blue-600 hover:text-blue-700" target="_blank">Flask</a> is lightweight and great for small, simple apps. Anything beyond simple, then
+            <a href="https://www.djangoproject.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Django</a> is the framework you are looking for.
+        </p>
+
+        <a name="databases" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Databases</h2>
+        <p class="py-4">
+            <code class="bg-gray-300">brew install mysql</code> ...Easy. 😂
+        </p>
+        <p class="py-4">
+            <a href="https://www.sequelpro.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Sequel Pro</a> to manage that MySQL db you just brewed. 🍺
+        </p>
+        <p class="py-4">
+            <a href="https://ktorm.liuwj.me/" class="text-blue-600 hover:text-blue-700" target="_blank">Ktorm Documentation</a> is a must have resource when using Alpas as well as
+            the Alpas <a href="https://alpas.dev/docs/ozone" class="text-blue-600 hover:text-blue-700" target="_blank">Ozone Documentation</a>.
+        </p>
+
+        <a name="analytics" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Analytics</h2>
+        <p class="py-4">
+            As old as <a href="https://analytics.google.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Google Analytics</a> is, it's hard to beat. Ton of free data to get lost in
+            analysis paralysis. Awwwwwwww... feels good! <a href="https://www.facebook.com/business/learn/facebook-ads-pixel" class="text-blue-600 hover:text-blue-700" target="_blank">Facebook Pixel</a> is
+            also really handy, especially for all of that sweet social and demographic data! All hail Zuckerberg! 🙄
+        </p>
+
+        <a name="projectmanagement" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Project Management</h2>
+        <p class="py-4">
+            <a href="https://basecamp.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Basecamp</a> is pretty great for small teams - as in, 2 people working on a couple of projects. Otherwise, it
+            doesn't scale all that well. The free version is all you should need.
+        </p>
+        <p class="py-4">
+            <a href="https://trello.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Trello</a> is da boss of kanban type task management. The free version goes a long way.
+        </p>
+        <p class="py-4">
+            <a href="https://www.atlassian.com/software/jira" class="text-blue-600 hover:text-blue-700" target="_blank">JIRA</a> by Altassian and Confluence are long standards. If your not tied into a windows shop
+            and forced to use Sharepoint, you are likely already using Atlassian's JIRA and Confluence products. They get the job done. Also, if you think it is a pain in the butt to manage - a) you are right; but, b)
+            man-o-man you should have tried working with JIRA around 2010... yikes...
+        </p>
+        <p class="py-4">
+            <a href="https://www.notion.so/" class="text-blue-600 hover:text-blue-700" target="_blank">Notion</a> is an awesome app that is like the light version of a combined JIRA, Confluence, etc. It might
+            be the only app you need for your team!
+        </p>
+
+        <a name="startuplife" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Startup Life</h2>
+        <p class="py-4">
+            <a href="https://www.indiehackers.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Indie Hackers</a> has the best community for startup / side-project founders around.
+        </p>
+        <p class="py-4">
+            <a href="https://getmakerlog.com/" class="text-blue-600 hover:text-blue-700" target="_blank">MakerLog</a> is just fun to see how big of a streak you can get! I just don't know how
+            useful it is otherwise...?
+        </p>
+        <p class="py-4">
+            <a href="https://www.reddit.com/r/startups/" class="text-blue-600 hover:text-blue-700" target="_blank">Startup sub-reddit</a> for forum discussions. Not as valuable as Indie Hackers
+            in my opinion, but is popular and gets a lot of eyes on it.
+        </p>
+        <p class="py-4">
+            <a href="https://www.producthunt.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Product Hunt</a> has hunters crawling the internet finding new apps to share with people. Well,
+            that was the original idea - it's now morphed more into the "announcing my new product for you to look at" website where you "launch" your product hoping to be the unicorn of the day. Quickly fleeting. 😔
+        </p>
+        <p class="py-4">
+            <a href="https://news.ycombinator.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Hacker News</a> is kinda like the product hunt of in-the-moment news. It generally has some interesting stuff.
+            Warning - avoid the comments, everyone is smarter than everyone else... 😂
+        </p>
+        <p class="py-4">
+            <a href="https://thatappshow.com/" class="text-blue-600 hover:text-blue-700" target="_blank">That App Show</a> is a place to post your app, get feedback, and show off your progress. It's a WIP and full disclosure,
+            this is also a website I'm a co-founder of. 😁
+        </p>
+        <p class="py-4">
+            <a href="https://www.makermove.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Maker Move</a> has a ton of good resources for Startups. Check out the directories page for a lot of
+            website communities to launch and market your startup on.
+        </p>
+        <p class="py-4">
+            <a href="https://f5bot.com/" class="text-blue-600 hover:text-blue-700" target="_blank">F5Bot</a> notifies you when keyword matches show up in popular forum such as
+            Reddit and Hacker News. If you have a product, you need to stay on top of these forums to direct people to your product. If you miss it by a day, then you are too late. Don't be late!
+        </p>
+
+        <a name="random" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Random</h2>
+        <p class="py-4">
+            <a href="https://slack.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Slack</a> is the boss of typing communication.
+        </p>
+        <p class="py-4">
+            <a href="https://zoom.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Zoom</a> is the boss of video communication.
+        </p>
+        <p class="py-4">
+            <a href="https://gsuite.google.com/" class="text-blue-600 hover:text-blue-700" target="_blank">G-Suite</a> for all other biz functions (email, docs, spreadsheets, etc)
+        </p>
+        <p class="py-4">
+            <a href="https://blog.remaketheweb.com/low-code-frameworks-for-building-multi-user-web-apps/" class="text-blue-600 hover:text-blue-700" target="_blank">Remake The Web's blog post of Low Code tools</a> is a helpful list of resources
+        </p>
+
+        <!--/ Post Content-->
+        <!-- Useful
+        <hr class="border-b border-grey-light py-4">
+        <div class="flex items-center">
+            <svg class="h-16 fill-current text-grey-dark hover:shadow hover:bg-purple-lightest hover:text-green p-4 mr-2 border rounded" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M11 0h1v3l3 7v8a2 2 0 0 1-2 2H5c-1.1 0-2.31-.84-2.7-1.88L0 12v-2a2 2 0 0 1 2-2h7V2a2 2 0 0 1 2-2zm6 10h3v10h-3V10z"/>
+            </svg>
+            <svg class="h-16 fill-current text-grey-dark hover:shadow hover:bg-purple-lightest hover:text-red p-4 mr-2 border rounded" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M11 20a2 2 0 0 1-2-2v-6H2a2 2 0 0 1-2-2V8l2.3-6.12A3.11 3.11 0 0 1 5 0h8a2 2 0 0 1 2 2v8l-3 7v3h-1zm6-10V0h3v10h-3z"/>
+            </svg>
+            <div class="pl-4">
+                <p class="text-grey-darkest font-bold">Did you find this article useful?</p>
+                <p class="text-xs text-grey-dark pt-2">0 out of 0 found this useful</p>
+            </div>
+        </div>
+        /Useful -->
+    </div>
+    <!--Back link
+    <div class="w-full lg:w-4/5 lg:ml-auto text-base md:text-sm text-grey px-4 py-6">
+            <span class="text-base text-purple font-bold">&lt;<span> <a href="#" class="text-base md:text-sm text-purple font-bold no-underline hover:underline">Back to Help</a></p>
+    </div>
+    -->
+</div>
+<!--/container-->
+
+{% endblock %}
+
+{% block footer_scripts %}
+
+<script>
+ var helpMenuDiv = document.getElementById("submenu-content");
+ var helpMenu = document.getElementById("submenu-toggle");
+
+ document.onclick = check;
+
+ function check(e){
+   var target = (e && e.target) || (event && event.srcElement);
+
+   //Help Menu
+   if (!checkParent(target, helpMenuDiv)) {
+    // click NOT on the menu
+    if (checkParent(target, helpMenu)) {
+      // click on the link
+      if (helpMenuDiv.classList.contains("hidden")) {
+        helpMenuDiv.classList.remove("hidden");
+      } else {helpMenuDiv.classList.add("hidden");}
+    } else {
+      // click both outside link and outside menu, hide menu
+      helpMenuDiv.classList.add("hidden");
+    }
+   }
+ }
+
+ function checkParent(t, elm) {
+   while(t.parentNode) {
+    if( t == elm ) {return true;}
+    t = t.parentNode;
+   }
+   return false;
+ }
+</script>
+
+{% endblock %}
