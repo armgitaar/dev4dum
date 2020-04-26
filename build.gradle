@@ -60,7 +60,7 @@ task enforceVersion() {
 
 shadowJar {
     destinationDirectory = file("./")
-    archiveBaseName.set('site')
+    archiveBaseName.set('app')
     archiveClassifier.set(null)
     version = null
 }
