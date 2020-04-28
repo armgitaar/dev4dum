@@ -68,6 +68,7 @@ node_modules
 *.log
 
 .env
+.env-prod
 .env.*
 !.env.example
 storage/sessions
