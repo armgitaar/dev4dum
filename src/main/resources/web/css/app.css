@@ -633,6 +633,7 @@ body {
   background-color: #fffefc;
   color: #111111;
   font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .adam {

@@ -3338,7 +3338,7 @@ var render = function() {
                     "/" +
                     video.video_key.toLowerCase() +
                     "/" +
-                    video.title.toLowerCase().replace(/ \//g, "-")
+                    video.title.toLowerCase().replace(/[\n\r\s\t\.]+/g, "-")
                 }
               },
               [
