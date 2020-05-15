@@ -1,0 +1,122 @@
+{% extends 'layout/app.peb' %}
+
+{% block title %} {{ highlight.title }} {% endblock %}
+
+
+{% block content %}
+
+{% include '_nav.peb' %}
+
+<!--Container-->
+<div class="container w-full flex flex-wrap mx-auto px-2 pb-8 pt-24">
+    <div class="w-full lg:w-1/5 lg:px-6 text-xl text-grey-darkest leading-normal">
+        <!--
+        <p class="text-base font-bold py-2 lg:pb-6 text-grey-darker">Contents</p>
+        -->
+        <div class="block lg:hidden sticky pin">
+            <button id="submenu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-grey-dark hover:border-purple appearance-none focus:outline-none">
+                <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="w-full sticky pin hidden h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 border border-grey-light lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:5em;" id="submenu-content">
+            <ul class="list-reset list-outside">
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#video" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:border-purple lg:hover:border-purple">
+                        <span class="pb-1 md:pb-0 text-sm">Video</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#Walkthrough" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Walkthrough</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#Learnings" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Learnings</span>
+                    </a>
+                </li>
+                <li class="py-2 md:my-0 hover:bg-purple-lightest lg:hover:bg-transparent">
+                    <a href="#Resources" class="block pl-1 align-middle text-grey-darker no-underline hover:text-purple border-l-4 border-transparent lg:hover:border-grey-light">
+                        <span class="pb-1 md:pb-0 text-sm">Resources</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-black leading-normal bg-white border border-grey-light border-rounded">
+        <!-- Highlight Video -->
+        <a name="video" class="anchor"></a>
+        <highlight-video highlight_key="{{ highlight.video_key }}" cat_id="{{ highlight.cat_id }}"></highlight-video>
+        <!-- / Highlight Video -->
+
+        <!-- Walkthrough -->
+        <div class="flex justify-between">
+            <div>
+                <a name="walkthrough" class="anchor"></a>
+                <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Walkthrough</h2>
+            </div>
+            {% admin %}
+            <div class="py-8 text-blue-700 hover:text-blue-500" name="walkthrough">
+                <a href="">Edit</a>
+            </div>
+            {% endadmin %}
+        </div>
+        <div>
+            wdojmwokowdk
+        </div>
+        <!-- / Walkthrough -->
+
+        <!-- Learnings -->
+        <a name="learnings" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Learnings</h2>
+        <!-- / Learnings -->
+
+        <!-- Resources -->
+        <a name="resources" class="anchor"></a>
+        <h2 class="font-sans break-normal text-black pt-6 pb-2 text-2xl font-semibold">Resources</h2>
+        <!-- / Resources -->
+
+    </div>
+</div>
+<!--/container-->
+
+{% endblock %}
+
+{% block footer_scripts %}
+
+<script>
+ var helpMenuDiv = document.getElementById("submenu-content");
+ var helpMenu = document.getElementById("submenu-toggle");
+
+ document.onclick = check;
+
+ function check(e){
+   var target = (e && e.target) || (event && event.srcElement);
+
+   //Help Menu
+   if (!checkParent(target, helpMenuDiv)) {
+    // click NOT on the menu
+    if (checkParent(target, helpMenu)) {
+      // click on the link
+      if (helpMenuDiv.classList.contains("hidden")) {
+        helpMenuDiv.classList.remove("hidden");
+      } else {helpMenuDiv.classList.add("hidden");}
+    } else {
+      // click both outside link and outside menu, hide menu
+      helpMenuDiv.classList.add("hidden");
+    }
+   }
+ }
+
+ function checkParent(t, elm) {
+   while(t.parentNode) {
+    if( t == elm ) {return true;}
+    t = t.parentNode;
+   }
+   return false;
+ }
+</script>
+
+{% endblock %}
