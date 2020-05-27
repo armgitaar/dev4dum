@@ -183,6 +183,9 @@
             <a href="https://www.sequelpro.com/" class="text-blue-600 hover:text-blue-700" target="_blank">Sequel Pro</a> to manage that MySQL db you just brewed. 🍺
         </p>
         <p class="py-4">
+            <a href="https://tableplus.com/" class="text-blue-600 hover:text-blue-700" target="_blank">TablePlus</a> is another dabatbase GUI and supports MySQL 8.0.
+        </p>
+        <p class="py-4">
             <a href="https://ktorm.liuwj.me/" class="text-blue-600 hover:text-blue-700" target="_blank">Ktorm Documentation</a> is a must have resource when using Alpas as well as
             the Alpas <a href="https://alpas.dev/docs/ozone" class="text-blue-600 hover:text-blue-700" target="_blank">Ozone Documentation</a>.
         </p>
